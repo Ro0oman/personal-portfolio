@@ -1,14 +1,17 @@
 <template>
-  <header>
-    <nav>
-      <!-- <router-link :to="{ name: 'trayectoria' }">
+  <!-- <router-link :to="{ name: 'trayectoria' }">
         <div>Mi Trayectoria</div>
       </router-link> -->
+  <header class="w-full flex m-auto items-center flex-row justify-center">
+    <nav class="w-1/3 sm:w-1/2 py-4 px-2 flex flex-row items-center justify-between font-bold">
+      <a href="#inicio">Inicio</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
     <div class="overflow-y-hidden">
       <router-view></router-view>
-      <Trayectoria/>
     </div>
 
   

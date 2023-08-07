@@ -1,4 +1,5 @@
 <template>
+  <div class="text-[#0067B1]">
     <n-timeline>
       <n-timeline-item
         type="info"
@@ -20,14 +21,16 @@
         time="2023-03-01 - 2023-07-01"
       />
     </n-timeline>
-  </template>
+  </div>
+</template>
 
 <script>
-    import {NTimeline, NTimelineItem} from 'naive-ui'
+import { NTimeline, NTimelineItem } from 'naive-ui'
 
-    export default{
-        components:{
-            NTimeline, NTimelineItem
-        }
-    }
+export default {
+  components: {
+    NTimeline,
+    NTimelineItem
+  }
+}
 </script>
