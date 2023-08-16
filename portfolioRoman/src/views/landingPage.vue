@@ -10,8 +10,8 @@
           <small class="text-xl">Junior Fullstack developer</small>
           <div class="max-w-xl">
             Desarrollo Aplicaciones Web Fullstack adaptandome a cualquier tecnologia que se me ponga
-            encima. Actualmente desarrollo con <span>Vue.js</span> y <span>Laravel</span> debido a la versatilidad que
-            ofrecen.
+            encima. Actualmente desarrollo con <span>Vue.js</span> y <span>Laravel</span> debido a
+            la versatilidad que ofrecen.
           </div>
           <div class="flex flex-row text-4xl mt-2 gap-4">
             <a class="icon" href="https://github.com/Ro0oman">
@@ -32,7 +32,14 @@
     </section>
     <section class="w-1/2 p-4 flex flex-col content-center justify-center" id="proyectos">
       <h1 class="title border-b-2">Proyectos</h1>
-        <Proyectos></Proyectos>
+      <Proyectos></Proyectos>
+      <span>Ni por asombro estos son todos mis proyectos, pero al no tener todo el tiempo del mundo los 
+      iré subiendo poco a poco, si quiere ver mas no dude en visitar mi repositorio de <a class="underline text-xl" href="https://github.com/Ro0oman">Github</a></span> 
+    </section>
+    <section class="w-1/2 p-4 mb-20 flex flex-col content-center justify-center" id="contacto">
+      <h1 class="title border-b-2">Contacto</h1>
+      <span>Actualmente me puede contactar a mi correo personal <a class="underline text-2xl" href="mailto:romainot99@gmail.com">romainot99@gmail.com</a> o bien por mensaje directo desde
+         <a class="underline text-xl" href="https://www.linkedin.com/in/roman-myziuk/"> LinkedIn</a>  </span>
     </section>
   </main>
 </template>

@@ -13,6 +13,14 @@
     @apply text-[#0067B1]
 }
 
+a{
+    @apply transition hover:scale-105 
+}
+
+#contacto a{
+    @apply transition hover:text-blue-900
+}
+
 header a{
     @apply border-2 rounded-md p-2 hover:scale-90 transition hover:border-blue-500
 }
@@ -20,7 +28,13 @@ header a{
     @apply grid grid-cols-3 sm:bg-red-400 p-10
 }
 
+.coverImg{
+    @apply h-60 object-cover
+}
 
+.buttonIcon{
+    @apply text-3xl
+}
 
 small{
     @apply text-yellow-300 my-2 text-sm

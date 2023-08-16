@@ -2,32 +2,36 @@
   <div class="cards my-4">
     <div class="my-2 mb-4">
       <div class="text-2xl">Etiquetas</div>
-      <div class="flex gap-4 p-2 border rounded-md ">
-        <n-tag
-          checkable
-          :bordered="false"
-          v-model:checked="vueTag"
-        >
+      <div class="flex gap-4 p-2 border rounded-md">
+        <n-tag checkable :bordered="false" v-model:checked="vueTag">
           Vue.js
           <template #avatar>
             <n-avatar src="https://vuejs.org/images/logo.png" />
           </template>
         </n-tag>
-        <n-tag
-          checkable
-          :bordered="false"
-          v-model:checked="jsTag"
-        >
-          JavaScript
+        <n-tag checkable :bordered="false" v-model:checked="tailwindTag">
+          Tailwind
           <template #avatar>
-            <n-avatar src="data:image/png;base64,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" />
+            <n-avatar
+              src="https://cdn.iconscout.com/icon/free/png-256/free-tailwind-css-5285308-4406745.png"
+            />
           </template>
         </n-tag>
-        <n-tag
-          checkable
-          :bordered="false"
-          v-model:checked="laravelTag"
-        >
+        <n-tag checkable :bordered="false" v-model:checked="htmlTag">
+          HTML & CSS
+          <template #avatar>
+            <n-avatar src="https://logowik.com/content/uploads/images/css3-html51661.jpg" />
+          </template>
+        </n-tag>
+        <n-tag checkable :bordered="false" v-model:checked="jsTag">
+          JavaScript
+          <template #avatar>
+            <n-avatar
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+            />
+          </template>
+        </n-tag>
+        <n-tag checkable :bordered="false" v-model:checked="laravelTag">
           Laravel
           <template #avatar>
             <n-avatar
@@ -35,31 +39,19 @@
             />
           </template>
         </n-tag>
-        <n-tag
-          checkable
-          :bordered="false"
-          v-model:checked="crudTag"
-        >
+        <n-tag checkable :bordered="false" v-model:checked="crudTag">
           CRUD API
           <template #avatar>
             <n-avatar src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" />
           </template>
         </n-tag>
-        <n-tag
-          checkable
-          :bordered="false"
-          v-model:checked="steamTag"
-        >
+        <n-tag checkable :bordered="false" v-model:checked="steamTag">
           Steam API
           <template #avatar>
-            <n-avatar src="https://assets.stickpng.com/images/58aefdc2c869e092af51ee6f.png" />
+            <n-avatar src="https://i.blogs.es/a34507/steam/1366_2000.jpg" />
           </template>
         </n-tag>
-        <n-tag
-          checkable
-          :bordered="false"
-          v-model:checked="slqTag"
-        >
+        <n-tag checkable :bordered="false" v-model:checked="slqTag">
           SQL
           <template #avatar>
             <n-avatar
@@ -70,25 +62,32 @@
       </div>
     </div>
     <n-grid cols="2 s:2 l:2 xl:3 2xl:3" :x-gap="12" :y-gap="8" responsive="screen">
-      <n-grid-item class="hover:scale-105 transition">
+      <n-grid-item class="">
         <n-card title="PC-Creator">
           <template #cover>
-            <img src="../assets/tfg.png" />
+            <img class="coverImg" src="../../public/tfg.png" />
             <div class="flex m-2 gap-2 flex-wrap">
-              <n-tag
-                checkable
-                v-model:checked="vueTag"
-              >
+              <n-tag checkable v-model:checked="vueTag">
                 Vue.js
                 <template #avatar>
                   <n-avatar src="https://vuejs.org/images/logo.png" />
                 </template>
               </n-tag>
-              <n-tag
-                checkable
-                :bordered="false"
-                v-model:checked="laravelTag"
-              >
+              <n-tag checkable :bordered="false" v-model:checked="tailwindTag">
+                Tailwind
+                <template #avatar>
+                  <n-avatar
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-tailwind-css-5285308-4406745.png"
+                  />
+                </template>
+              </n-tag>
+              <n-tag checkable :bordered="false" v-model:checked="htmlTag">
+                HTML & CSS
+                <template #avatar>
+                  <n-avatar src="https://logowik.com/content/uploads/images/css3-html51661.jpg" />
+                </template>
+              </n-tag>
+              <n-tag checkable :bordered="false" v-model:checked="laravelTag">
                 Laravel
                 <template #avatar>
                   <n-avatar
@@ -96,31 +95,19 @@
                   />
                 </template>
               </n-tag>
-              <n-tag
-                checkable
-                :bordered="false"
-                v-model:checked="crudTag"
-              >
+              <n-tag checkable :bordered="false" v-model:checked="crudTag">
                 CRUD API
                 <template #avatar>
                   <n-avatar src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" />
                 </template>
               </n-tag>
-              <n-tag
-                checkable
-                :bordered="false"
-                v-model:checked="steamTag"
-              >
+              <n-tag checkable :bordered="false" v-model:checked="steamTag">
                 Steam API
                 <template #avatar>
-                  <n-avatar src="https://assets.stickpng.com/images/58aefdc2c869e092af51ee6f.png" />
+                  <n-avatar src="https://i.blogs.es/a34507/steam/1366_2000.jpg" />
                 </template>
               </n-tag>
-              <n-tag
-                checkable
-                :bordered="false"
-                v-model:checked="slqTag"
-              >
+              <n-tag checkable :bordered="false" v-model:checked="slqTag">
                 SQL
                 <template #avatar>
                   <n-avatar
@@ -131,26 +118,97 @@
             </div>
           </template>
           Aplicacion que permite crear ordenadores los cuales van orientados a un juego especifico.
+          <div class="botones flex flex-wrap gap-2 justify-around mt-4">
+            <a href="https://github.com/Ro0oman/Proyecto-TFG-Roman" target="_blank">
+              <n-button icon-placement="left">
+                <template #icon>
+                  <i class="fa buttonIcon fa-github" aria-hidden="true"></i>
+                </template>
+                Code
+              </n-button>
+            </a>
+            <n-button disabled=""> Demo </n-button>
+          </div>
         </n-card>
       </n-grid-item>
-      <n-grid-item class="hover:scale-105 transition">
+      <n-grid-item class="">
         <n-card title="PONG V.2 Hecho con JavaScript Vanilla">
           <template #cover>
-            <img src="../assets/tfg.png" />
+            <img class="coverImg" src="../../public/pong.png" />
             <div class="flex m-2 gap-2 flex-wrap">
-              <n-tag
-          checkable
-          :bordered="false"
-          v-model:checked="jsTag"
-        >
-          JavaScript
-          <template #avatar>
-            <n-avatar src="data:image/png;base64,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" />
-          </template>
-        </n-tag>
+              <n-tag checkable :bordered="false" v-model:checked="jsTag">
+                JavaScript
+                <template #avatar>
+                  <n-avatar
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+                  />
+                </template>
+              </n-tag>
+              <n-tag checkable :bordered="false" v-model:checked="htmlTag">
+                HTML & CSS
+                <template #avatar>
+                  <n-avatar src="https://logowik.com/content/uploads/images/css3-html51661.jpg" />
+                </template>
+              </n-tag>
             </div>
           </template>
-          Aplicacion que permite crear ordenadores los cuales van orientados a un juego especifico.
+          Recreación del juego Pong, progaramado con Javascript Vanilla, con opción de duración de
+          partida y selector de dificultad
+          <div class="botones flex flex-wrap gap-2 justify-around mt-4">
+            <a href="https://github.com/Ro0oman/PONG-V2" target="_blank">
+              <n-button icon-placement="left">
+                <template #icon>
+                  <i class="fa buttonIcon fa-github" aria-hidden="true"></i>
+                </template>
+                Code
+              </n-button>
+            </a>
+            <a href="https://demo.d3roman.host/" target="_blank">
+              <n-button icon-placement="left">
+                Demo
+              </n-button>
+            </a>
+          </div>
+        </n-card>
+      </n-grid-item>
+      <n-grid-item class="">
+        <n-card title="Portfolio personal">
+          <template #cover>
+            <img class="coverImg" src="../../public/portfolio.png" />
+            <div class="flex m-2 gap-2 flex-wrap">
+              <n-tag checkable :bordered="false" v-model:checked="tailwindTag">
+                Tailwind
+                <template #avatar>
+                  <n-avatar
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-tailwind-css-5285308-4406745.png"
+                  />
+                </template>
+              </n-tag>
+              <n-tag checkable :bordered="false" v-model:checked="vueTag">
+                Vue.js
+                <template #avatar>
+                  <n-avatar src="https://vuejs.org/images/logo.png" />
+                </template>
+              </n-tag>
+              <n-tag checkable :bordered="false" v-model:checked="htmlTag">
+                HTML & CSS
+                <template #avatar>
+                  <n-avatar src="https://logowik.com/content/uploads/images/css3-html51661.jpg" />
+                </template>
+              </n-tag>
+            </div>
+          </template>
+          Pagina web en la cual muestro mis conocimiento y proyectos para poder mostrar a las personas interesadas en mi que conocimientos poseo.
+          <div class="botones flex flex-wrap gap-2 justify-around mt-4">
+            <a href="https://github.com/Ro0oman/personal-portfolio" target="_blank">
+              <n-button icon-placement="left">
+                <template #icon>
+                  <i class="fa buttonIcon fa-github" aria-hidden="true"></i>
+                </template>
+                Code
+              </n-button>
+            </a>
+          </div>
         </n-card>
       </n-grid-item>
     </n-grid>
@@ -158,7 +216,7 @@
 </template>
 
 <script>
-import { NCard, NSpace, NGrid, NGridItem, NTag, NAvatar } from 'naive-ui'
+import { NCard, NSpace, NGrid, NGridItem, NTag, NAvatar, NButton } from 'naive-ui'
 import { ref } from 'vue'
 
 export default {
@@ -168,10 +226,13 @@ export default {
     NGrid,
     NGridItem,
     NTag,
-    NAvatar
+    NAvatar,
+    NButton
   },
   setup() {
     const vueTag = ref(false)
+    const tailwindTag = ref(false)
+    const htmlTag = ref(false)
     const laravelTag = ref(false)
     const crudTag = ref(false)
     const steamTag = ref(false)
@@ -179,6 +240,8 @@ export default {
     const jsTag = ref(false)
     return {
       vueTag,
+      tailwindTag,
+      htmlTag,
       laravelTag,
       crudTag,
       steamTag,
