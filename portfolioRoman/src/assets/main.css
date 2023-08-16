@@ -20,10 +20,12 @@ header a{
     @apply grid grid-cols-3 sm:bg-red-400 p-10
 }
 
+
+
 small{
     @apply text-yellow-300 my-2 text-sm
 }
-span{
+.spanAmarillo span{
     @apply text-yellow-300 
 }
 

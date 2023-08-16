@@ -2,7 +2,7 @@
   <main class="flex flex-col items-center content-center justify-center gap-4">
     <section class="mt-4 w-1/2" id="inicio">
       <div
-        class="flex flex-row items-center content-center w-full justify-center gap-10 object-contain"
+        class="flex flex-row items-center content-center w-full justify-center gap-10 object-contain spanAmarillo"
       >
         <n-image width="300" src="../../public/icono.webp" />
         <div class="flex flex-col">
