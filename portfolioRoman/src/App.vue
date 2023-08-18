@@ -5,12 +5,9 @@
       <a href="#trayectoria">{{ $t('header.trayectoria') }}</a>
       <a href="#proyectos">{{ $t('header.proyectos') }}</a>
       <a href="#contacto">{{ $t('header.contacto') }}</a>
-      <div class="border rounded-md p-1 ml-2">
-        Language:<select v-model="$i18n.locale">
-          <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang.code">
-            {{ lang.text }}
-          </option>
-        </select>
+      <div class="p-1 ml-2 flex flex-row items-center ">
+        Language:
+        <n-select v-model:value="valueLang" :options="langOpts"  @update:value="handleUpdateValue"/>
       </div>
     </nav>
   </header>
@@ -22,17 +19,27 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { NSelect } from 'naive-ui'
+import { RouterView } from 'vue-router'
+import { ref } from 'vue'
 export default {
+  components:{
+    NSelect
+  },
   setup() {
-    const langs = [
-      { code: 'es', text: 'Español' },
-      { code: 'en', text: 'English' }
-    ]
+    const valueLang = ref('es')
+    const langOpts = ref(
+      [
+        { value: 'es', label: 'Español' },
+        { value: 'en', label: 'English' }
+      ])
     return {
-      langs
+      valueLang, langOpts
+    }
+  },
+  methods:{
+    handleUpdateValue(){
+      this.$i18n.locale = this.valueLang
     }
   }
 }
