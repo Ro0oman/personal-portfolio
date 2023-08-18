@@ -8,9 +8,7 @@
         <div class="flex flex-col">
           <h1 class="text-4xl font-bold">{{ $t('landing.holaSoy') }} <span>Roman Myziuk</span></h1>
           <small class="text-xl">Junior Fullstack developer</small>
-          <div class="max-w-xl">{{ $t('landing.descripcion1') }} <span>Vue.js</span>  {{ $t('general.y') }}
- <span>Laravel</span>
-            {{ $t('landing.descripcion2') }}
+          <div class="max-w-xl"><span>{{ $t('general.exigente') }}</span>  {{ $t('general.y') }} <span>{{ $t('general.perfeccionista') }}</span> {{ $t('landing.descripcion1') }} 
           </div>
           <div class="flex flex-row text-4xl mt-2 gap-4">
             <a class="icon" href="https://github.com/Ro0oman">

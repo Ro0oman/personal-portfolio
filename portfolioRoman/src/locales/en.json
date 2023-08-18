@@ -1,16 +1,18 @@
 {
     "general": {
-      "and": "and"
+      "and": "and",
+      "exigente":"Demanding",
+      "perfeccionista":"Perfectionist"
     },
     "header": {
-      "inicio": "Start",
+      "inicio": "About me",
       "trayectoria": "Trajectory",
       "proyectos": "Projects",
       "contacto": "Contact"
     },
     "landing": {
       "holaSoy": "Hello, I'm",
-      "descripcion1": "I develop Fullstack Web Applications adapting to any technology that comes my way. I currently develop with",
+      "descripcion1": "eager to face new challenges, ambitious spirit and a great passion for the technology that surrounds us and its meaning.",
       "descripcion2": "due to the versatility they offer."
     },
     "proyectos": {
