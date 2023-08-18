@@ -1,6 +1,6 @@
 <template>
   <main class="flex flex-col items-center content-center justify-center gap-4">
-    <section class="mt-4 w-1/2" id="inicio">
+    <section class="mt-4 xl:w-1/2" id="inicio">
       <div
         class="flex flex-row items-center content-center w-full justify-center gap-10 object-contain spanAmarillo"
       >
@@ -24,19 +24,19 @@
         </div>
       </div>
     </section>
-    <section class="w-1/2 p-4 flex flex-col content-center justify-center" id="trayectoria">
+    <section class="xl:w-1/2 p-4 flex flex-col content-center justify-center" id="trayectoria">
       <h1 class="title border-b-2">Trayectoria</h1>
       <div class="p-4">
         <Trayectoria></Trayectoria>
       </div>
     </section>
-    <section class="w-1/2 p-4 flex flex-col content-center justify-center" id="proyectos">
+    <section class="xl:w-1/2 p-4 flex flex-col content-center justify-center" id="proyectos">
       <h1 class="title border-b-2">Proyectos</h1>
       <Proyectos></Proyectos>
       <span>Ni por asombro estos son todos mis proyectos, pero al no tener todo el tiempo del mundo los 
       iré subiendo poco a poco, si quiere ver mas no dude en visitar mi repositorio de <a class="underline text-xl" href="https://github.com/Ro0oman">Github</a></span> 
     </section>
-    <section class="w-1/2 p-4 mb-20 flex flex-col content-center justify-center" id="contacto">
+    <section class="xl:w-1/2 p-4 mb-20 flex flex-col content-center justify-center" id="contacto">
       <h1 class="title border-b-2">Contacto</h1>
       <span>Actualmente me puede contactar a mi correo personal <a class="underline text-2xl" href="mailto:romainot99@gmail.com">romainot99@gmail.com</a> o bien por mensaje directo desde
          <a class="underline text-xl" href="https://www.linkedin.com/in/roman-myziuk/"> LinkedIn</a>  </span>

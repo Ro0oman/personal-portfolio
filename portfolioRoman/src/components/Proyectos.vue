@@ -2,14 +2,17 @@
   <div class="cards my-4">
     <div class="my-2 mb-4">
       <div class="text-2xl">Etiquetas</div>
-      <div class="flex gap-4 p-2 border rounded-md">
-        <n-tag checkable :bordered="false" v-model:checked="vueTag">
+      <div class="flex gap-4 p-2 border rounded-md flex-wrap">
+        <div class="etiqueta">
+          <n-tag checkable :bordered="false" v-model:checked="vueTag">
           Vue.js
           <template #avatar>
             <n-avatar src="https://vuejs.org/images/logo.png" />
           </template>
         </n-tag>
-        <n-tag checkable :bordered="false" v-model:checked="tailwindTag">
+        </div>
+        <div class="etiqueta">
+          <n-tag checkable :bordered="false" v-model:checked="tailwindTag">
           Tailwind
           <template #avatar>
             <n-avatar
@@ -17,13 +20,17 @@
             />
           </template>
         </n-tag>
-        <n-tag checkable :bordered="false" v-model:checked="htmlTag">
+        </div>
+        <div class="etiqueta">
+          <n-tag checkable :bordered="false" v-model:checked="htmlTag">
           HTML & CSS
           <template #avatar>
             <n-avatar src="https://logowik.com/content/uploads/images/css3-html51661.jpg" />
           </template>
         </n-tag>
-        <n-tag checkable :bordered="false" v-model:checked="jsTag">
+        </div>
+        <div class="etiqueta">
+          <n-tag checkable :bordered="false" v-model:checked="jsTag">
           JavaScript
           <template #avatar>
             <n-avatar
@@ -31,7 +38,9 @@
             />
           </template>
         </n-tag>
-        <n-tag checkable :bordered="false" v-model:checked="laravelTag">
+        </div>
+        <div class="etiqueta">
+          <n-tag checkable :bordered="false" v-model:checked="laravelTag">
           Laravel
           <template #avatar>
             <n-avatar
@@ -39,19 +48,25 @@
             />
           </template>
         </n-tag>
-        <n-tag checkable :bordered="false" v-model:checked="crudTag">
+        </div>
+        <div class="etiqueta">
+          <n-tag checkable :bordered="false" v-model:checked="crudTag">
           CRUD API
           <template #avatar>
             <n-avatar src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" />
           </template>
         </n-tag>
-        <n-tag checkable :bordered="false" v-model:checked="steamTag">
+        </div>
+        <div class="etiqueta">
+          <n-tag checkable :bordered="false" v-model:checked="steamTag">
           Steam API
           <template #avatar>
             <n-avatar src="https://i.blogs.es/a34507/steam/1366_2000.jpg" />
           </template>
         </n-tag>
-        <n-tag checkable :bordered="false" v-model:checked="slqTag">
+        </div>
+        <div class="etiqueta">
+          <n-tag checkable :bordered="false" v-model:checked="slqTag">
           SQL
           <template #avatar>
             <n-avatar
@@ -59,6 +74,7 @@
             />
           </template>
         </n-tag>
+        </div>
       </div>
     </div>
     <n-grid cols="2 s:2 l:2 xl:3 2xl:3" :x-gap="12" :y-gap="8" responsive="screen">

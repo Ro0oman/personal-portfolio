@@ -13,6 +13,10 @@
     @apply text-[#0067B1]
 }
 
+.etiqueta{
+    @apply bg-slate-100 rounded-md border-2
+}
+
 a{
     @apply transition hover:scale-105 
 }
