@@ -1,0 +1,37 @@
+{
+    "general": {
+      "and": "and"
+    },
+    "header": {
+      "inicio": "Start",
+      "trayectoria": "Trajectory",
+      "proyectos": "Projects",
+      "contacto": "Contact"
+    },
+    "landing": {
+      "holaSoy": "Hello, I'm",
+      "descripcion1": "I develop Fullstack Web Applications adapting to any technology that comes my way. I currently develop with",
+      "descripcion2": "due to the versatility they offer."
+    },
+    "proyectos": {
+    "etiquetas":"Tags",
+      "noSonTodos": "These are not all my projects, but not having all the time I would like, I'll upload them little by little, if you want to see more, don't hesitate to visit my repository",
+      "descripcionPC-Creator": "Application that allows you to create computers which are oriented to a specific game.",
+      "tituloPong": "PONG V.2 Made with Vanilla JavaScript",
+      "descripcionPong": "Recreation of the game Pong, programmed with Vanilla Javascript, with option of game duration and difficulty selector",
+      "tituloPortfolio": "Personal portfolio",
+      "descripcionPortfolio": "Web page in which I show my knowledge and projects to people interested in my work"
+    },
+    "contacto": {
+      "info1": "Currently you can contact me at my personal email ",
+      "info2": " or by direct message from "
+    },
+    "trayectoria":{
+      "tituloGradoMedio":"CFGM Degree in Microcomputer Systems and Networks",
+      "contenidoGradoMedio":"Introduction to Computer Security, Installation and configuration of Network Applications (DHCP, Apache, DNS, FTP...), First contact with HTML5, Assembly and Maintenance of Computers",
+      "tituloGradoSuperior":"CFGS Title in Web Application Development",
+      "contenidoGradoSuperior":"Programming in: Java, Python, C, SQL, PLSQL, PHP, JavaScript, Laravel, Vue Js, MySQL",
+      "tituloTesi":"I work as a Junior FullStack at TESI",
+      "contenidoTesi":"Fullstack development in Vue.js 3 as a Frontend environment for an application prepared to manage millions of users, Laravel for the use of Automation of telephone calls with the Twilio and .NET API creating a CRUD API"
+    }
+  }

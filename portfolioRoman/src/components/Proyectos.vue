@@ -1,7 +1,7 @@
 <template>
   <div class="cards my-4">
     <div class="my-2 mb-4">
-      <div class="text-2xl">Etiquetas</div>
+      <div class="text-2xl">{{$t('proyectos.etiquetas')}}</div>
       <div class="flex gap-4 p-2 border rounded-md flex-wrap">
         <div class="etiqueta">
           <n-tag checkable :bordered="false" v-model:checked="vueTag">
@@ -77,9 +77,10 @@
         </div>
       </div>
     </div>
-    <n-grid cols="2 s:2 l:2 xl:3 2xl:3" :x-gap="12" :y-gap="8" responsive="screen">
+    <n-grid cols="1 s:2 l:2 xl:3 2xl:3" :x-gap="12" :y-gap="8" responsive="screen">
       <n-grid-item class="">
-        <n-card title="PC-Creator">
+        <n-card 
+        title="PC-Creator">
           <template #cover>
             <img class="coverImg" src="../../public/tfg.png" />
             <div class="flex m-2 gap-2 flex-wrap">
@@ -133,7 +134,7 @@
               </n-tag>
             </div>
           </template>
-          Aplicacion que permite crear ordenadores los cuales van orientados a un juego especifico.
+          {{$t('proyectos.descripcionPC-Creator')}}
           <div class="botones flex flex-wrap gap-2 justify-around mt-4">
             <a href="https://github.com/Ro0oman/Proyecto-TFG-Roman" target="_blank">
               <n-button icon-placement="left">
@@ -148,7 +149,7 @@
         </n-card>
       </n-grid-item>
       <n-grid-item class="">
-        <n-card title="PONG V.2 Hecho con JavaScript Vanilla">
+        <n-card :title="$t('proyectos.tituloPong')">
           <template #cover>
             <img class="coverImg" src="../../public/pong.png" />
             <div class="flex m-2 gap-2 flex-wrap">
@@ -168,8 +169,7 @@
               </n-tag>
             </div>
           </template>
-          Recreación del juego Pong, progaramado con Javascript Vanilla, con opción de duración de
-          partida y selector de dificultad
+          {{ $t('proyectos.descripcionPong') }}
           <div class="botones flex flex-wrap gap-2 justify-around mt-4">
             <a href="https://github.com/Ro0oman/PONG-V2" target="_blank">
               <n-button icon-placement="left">
@@ -188,7 +188,7 @@
         </n-card>
       </n-grid-item>
       <n-grid-item class="">
-        <n-card title="Portfolio personal">
+        <n-card :title="$t('proyectos.tituloPortfolio')">
           <template #cover>
             <img class="coverImg" src="../../public/portfolio.png" />
             <div class="flex m-2 gap-2 flex-wrap">
@@ -214,7 +214,7 @@
               </n-tag>
             </div>
           </template>
-          Pagina web en la cual muestro mis conocimiento y proyectos para poder mostrar a las personas interesadas en mi que conocimientos poseo.
+          {{$t('proyectos.descripcionPortfolio')}}
           <div class="botones flex flex-wrap gap-2 justify-around mt-4">
             <a href="https://github.com/Ro0oman/personal-portfolio" target="_blank">
               <n-button icon-placement="left">

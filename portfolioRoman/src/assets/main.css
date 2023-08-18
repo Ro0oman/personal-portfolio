@@ -3,7 +3,6 @@
     --falloutBlue: #0067B1;
     color: var(--falloutBlue);
 }
-  
 
 @tailwind base;
 @tailwind components;
@@ -17,17 +16,14 @@
     @apply bg-slate-100 rounded-md border-2
 }
 
-a{
-    @apply transition hover:scale-105 
+header a{
+    @apply transition hover:scale-125 
 }
 
 #contacto a{
     @apply transition hover:text-blue-900
 }
 
-header a{
-    @apply border-2 rounded-md p-2 hover:scale-90 transition hover:border-blue-500
-}
 .projects-box{
     @apply grid grid-cols-3 sm:bg-red-400 p-10
 }
@@ -41,10 +37,10 @@ header a{
 }
 
 small{
-    @apply text-yellow-300 my-2 text-sm
+    @apply text-yellow-500 my-2 text-sm
 }
 .spanAmarillo span{
-    @apply text-yellow-300 
+    @apply text-yellow-500 
 }
 
 .title{
