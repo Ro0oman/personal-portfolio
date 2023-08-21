@@ -21,7 +21,7 @@
             <div
               class="flex items-center justify-center flex-col hover:scale-110 transition cursor-pointer duration-250"
             >
-              <img class="flagImg" src="./assets/spain.png" alt="Español" />
+              <img class="flagImg hover:border-round" src="./assets/spain.png" alt="Español" />
               Español
             </div>
           </button>
