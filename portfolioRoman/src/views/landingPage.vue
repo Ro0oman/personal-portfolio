@@ -4,7 +4,7 @@
       <div
         class="flex flex-row items-center content-center w-full justify-center gap-10 object-contain spanAmarillo"
       >
-        <n-image  width="300" src="../../public/icono.webp" />
+        <n-image width="300" src="https://demo.d3roman.host/resources/falloutBoy.png" />
         <div class="flex flex-col">
           <h1 class="text-4xl font-bold">{{ $t('landing.holaSoy') }} <span>Roman Myziuk</span></h1>
           <small class="text-xl">Junior Fullstack developer</small>
