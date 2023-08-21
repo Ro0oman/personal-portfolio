@@ -89,7 +89,7 @@
       <n-grid-item class="">
         <n-card embedded title="PC-Creator">
           <template #cover>
-            <n-image  class="coverImg" src="../../public/tfg.png" />
+            <n-image  class="coverImg" src="https://demo.d3roman.host/resources/tfg.png" />
             <div class="flex m-2 gap-2 flex-wrap">
               <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="naiveUITag">
                 Naive UI
@@ -164,7 +164,7 @@
       <n-grid-item class="">
         <n-card embedded :title="$t('proyectos.tituloPong')">
           <template #cover>
-            <n-image src="../../public/pong.png" />
+            <n-image src="https://demo.d3roman.host/resources/pong.png" />
             <div class="flex m-2 gap-2 flex-wrap">
               <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="jsTag">
                 JavaScript
@@ -201,7 +201,7 @@
       <n-grid-item class="">
         <n-card embedded :title="$t('proyectos.tituloPortfolio')">
           <template #cover>
-            <n-image src="../../public/portfolio.png" />
+            <n-image src="https://demo.d3roman.host/resources/portfolio.png" />
             <div class="flex m-2 gap-2 flex-wrap">
               <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="naiveUITag">
                 Naive UI
