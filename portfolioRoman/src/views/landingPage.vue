@@ -4,8 +4,8 @@
       <div
         class="flex flex-row items-center content-center w-full justify-center gap-10 object-contain spanAmarillo"
       >
-        <n-image width="300" src="https://demo.d3roman.host/resources/falloutBoy.png" />
-        <div class="flex flex-col">
+        <n-image class="xl:block xs:hidden" width="300" src="https://demo.d3roman.host/resources/falloutBoy.png" />
+        <div class="flex flex-col mx-6">
           <h1 class="text-4xl font-bold">{{ $t('landing.holaSoy') }} <span>Roman Myziuk</span></h1>
           <small class="text-xl">Junior Fullstack developer</small>
           <div class="max-w-xl"><span>{{ $t('general.exigente') }}</span>  {{ $t('general.y') }} <span>{{ $t('general.perfeccionista') }}</span> {{ $t('landing.descripcion1') }} 
@@ -38,7 +38,7 @@
         {{ $t('contacto.info1') }}
         <a class="underline text-2xl" href="mailto:romainot99@gmail.com">romainot99@gmail.com</a>
         {{ $t('contacto.info2') }}
-        <a class="underline text-xl" href="https://www.linkedin.com/in/roman-myziuk/"> LinkedIn</a>  </span>
+        <a class="underline text-xl" href="https://www.linkedin.com/in/roman-myziuk/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>  </span>
     </section>
   </main>
 </template>

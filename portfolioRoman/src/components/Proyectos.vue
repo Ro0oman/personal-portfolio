@@ -87,23 +87,23 @@
     </div>
     <n-grid cols="1 s:2 l:2 xl:3 2xl:3" :x-gap="12" :y-gap="8" responsive="screen">
       <n-grid-item class="">
-        <n-card title="PC-Creator">
+        <n-card embedded title="PC-Creator">
           <template #cover>
-            <img class="coverImg" src="../../public/tfg.png" />
+            <n-image  class="coverImg" src="../../public/tfg.png" />
             <div class="flex m-2 gap-2 flex-wrap">
-              <n-tag checkable :bordered="false" v-model:checked="naiveUITag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="naiveUITag">
                 Naive UI
                 <template #avatar>
                   <n-avatar src="https://www.naiveui.com/assets/naivelogo-93278402.svg" />
                 </template>
               </n-tag>
-              <n-tag checkable v-model:checked="vueTag">
+              <n-tag  class="etiqueta" checkable v-model:checked="vueTag">
                 Vue.js
                 <template #avatar>
                   <n-avatar src="https://vuejs.org/images/logo.png" />
                 </template>
               </n-tag>
-              <n-tag checkable :bordered="false" v-model:checked="tailwindTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="tailwindTag">
                 Tailwind
                 <template #avatar>
                   <n-avatar
@@ -111,13 +111,13 @@
                   />
                 </template>
               </n-tag>
-              <n-tag checkable :bordered="false" v-model:checked="htmlTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="htmlTag">
                 HTML & CSS
                 <template #avatar>
                   <n-avatar src="https://logowik.com/content/uploads/images/css3-html51661.jpg" />
                 </template>
               </n-tag>
-              <n-tag checkable :bordered="false" v-model:checked="laravelTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="laravelTag">
                 Laravel
                 <template #avatar>
                   <n-avatar
@@ -125,19 +125,19 @@
                   />
                 </template>
               </n-tag>
-              <n-tag checkable :bordered="false" v-model:checked="crudTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="crudTag">
                 CRUD API
                 <template #avatar>
                   <n-avatar src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" />
                 </template>
               </n-tag>
-              <n-tag checkable :bordered="false" v-model:checked="steamTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="steamTag">
                 Steam API
                 <template #avatar>
                   <n-avatar src="https://i.blogs.es/a34507/steam/1366_2000.jpg" />
                 </template>
               </n-tag>
-              <n-tag checkable :bordered="false" v-model:checked="slqTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="slqTag">
                 SQL
                 <template #avatar>
                   <n-avatar
@@ -162,11 +162,11 @@
         </n-card>
       </n-grid-item>
       <n-grid-item class="">
-        <n-card :title="$t('proyectos.tituloPong')">
+        <n-card embedded :title="$t('proyectos.tituloPong')">
           <template #cover>
-            <img class="coverImg" src="../../public/pong.png" />
+            <n-image src="../../public/pong.png" />
             <div class="flex m-2 gap-2 flex-wrap">
-              <n-tag checkable :bordered="false" v-model:checked="jsTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="jsTag">
                 JavaScript
                 <template #avatar>
                   <n-avatar
@@ -174,7 +174,7 @@
                   />
                 </template>
               </n-tag>
-              <n-tag checkable :bordered="false" v-model:checked="htmlTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="htmlTag">
                 HTML & CSS
                 <template #avatar>
                   <n-avatar src="https://logowik.com/content/uploads/images/css3-html51661.jpg" />
@@ -199,17 +199,17 @@
         </n-card>
       </n-grid-item>
       <n-grid-item class="">
-        <n-card :title="$t('proyectos.tituloPortfolio')">
+        <n-card embedded :title="$t('proyectos.tituloPortfolio')">
           <template #cover>
-            <img class="coverImg" src="../../public/portfolio.png" />
+            <n-image src="../../public/portfolio.png" />
             <div class="flex m-2 gap-2 flex-wrap">
-              <n-tag checkable :bordered="false" v-model:checked="naiveUITag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="naiveUITag">
                 Naive UI
                 <template #avatar>
                   <n-avatar src="https://www.naiveui.com/assets/naivelogo-93278402.svg" />
                 </template>
               </n-tag>
-              <n-tag checkable :bordered="false" v-model:checked="tailwindTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="tailwindTag">
                 Tailwind
                 <template #avatar>
                   <n-avatar
@@ -217,13 +217,13 @@
                   />
                 </template>
               </n-tag>
-              <n-tag checkable :bordered="false" v-model:checked="vueTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="vueTag">
                 Vue.js
                 <template #avatar>
                   <n-avatar src="https://vuejs.org/images/logo.png" />
                 </template>
               </n-tag>
-              <n-tag checkable :bordered="false" v-model:checked="htmlTag">
+              <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="htmlTag">
                 HTML & CSS
                 <template #avatar>
                   <n-avatar src="https://logowik.com/content/uploads/images/css3-html51661.jpg" />
@@ -249,12 +249,12 @@
 </template>
 
 <script>
-import { NCard, NSpace, NGrid, NGridItem, NTag, NAvatar, NButton } from 'naive-ui'
+import { NCard, NImage, NSpace, NGrid, NGridItem, NTag, NAvatar, NButton } from 'naive-ui'
 import { ref } from 'vue'
 
 export default {
   components: {
-    NCard,
+    NCard, NImage,
     NSpace,
     NGrid,
     NGridItem,
