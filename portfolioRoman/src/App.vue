@@ -1,6 +1,7 @@
 <template>
   
-  <header class="w-full flex m-auto items-center flex-row justify-center">
+  <n-config-provider :theme="darkTheme">
+    <header class="w-full flex m-auto items-center flex-row justify-center">
     <n-modal v-model:show="showModal">
       <n-card
         class="flex items-center"
@@ -52,22 +53,29 @@
   <div class="overflow-y-hidden">
     <router-view></router-view>
   </div>
+  </n-config-provider>
 </template>
 
 <script>
-import { NSelect, NModal, NCard, NAlert } from 'naive-ui'
+import { NSelect, NModal, NCard, NAlert, NConfigProvider } from 'naive-ui'
+import { darkTheme } from 'naive-ui'
+
 import { RouterView } from 'vue-router'
 import { ref } from 'vue'
+
 export default {
   components: {
     NSelect,
     NModal,
     NCard,
-    NAlert
-  },
+    NAlert,
+    NConfigProvider,
+    darkTheme
+},
   setup() {
     const valueLang = ref('es')
-    const showModal = ref(true)
+    const showModal = ref(false)
+    // const showModal = ref(true)
     const langOpts = ref([
       { value: 'es', label: 'Español' },
       { value: 'en', label: 'English' }
@@ -75,7 +83,8 @@ export default {
     return {
       valueLang,
       langOpts,
-      showModal
+      showModal,
+      darkTheme
     }
   },
   methods: {

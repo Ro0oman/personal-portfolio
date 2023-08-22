@@ -1,7 +1,8 @@
 :root{
     font-size: 14px;
-    --falloutBlue: #0067B1;
+    --falloutBlue: #E1EFE6;
     color: var(--falloutBlue);
+    background-color: #160C28;
 }
 
 html{
@@ -12,20 +13,33 @@ html{
 @tailwind components;
 @tailwind utilities;
 
+.card{
+    @apply bg-[#18181C] rounded-lg border 
+}
+
+.tags{
+    @apply h-28 flex justify-center items-center
+}
+
+.content{
+    @apply h-52 flex-col justify-center items-center
+}
+
+
 .texto{
     @apply text-[#0067B1]
 }
 
 .etiqueta{
-    @apply bg-slate-100 rounded-md border-2
+    @apply bg-[#2f1a57] rounded
 }
 
 header a{
-    @apply transition hover:scale-125 
+    @apply transition hover:scale-125 text-[#EFCB68]
 }
 
 #contacto a{
-    @apply transition hover:text-blue-900
+    @apply transition hover:text-[#EFCB68]
 }
 
 .projects-box{
@@ -33,7 +47,7 @@ header a{
 }
 
 .coverImg{
-    @apply h-60 object-cover
+    @apply h-60 object-center  rounded-t-lg w-full
 }
 
 .flagImg{
@@ -45,10 +59,10 @@ header a{
 }
 
 small{
-    @apply text-yellow-500 my-2 text-sm
+    @apply text-[#EFCB68] my-2 text-sm
 }
 .spanAmarillo span{
-    @apply text-yellow-500 
+    @apply text-[#EFCB68] 
 }
 
 .title{
