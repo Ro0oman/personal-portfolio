@@ -178,7 +178,11 @@
                     Code
                   </n-button>
                 </a>
-                <n-button disabled=""> Demo </n-button>
+                <a href="https://pcbuilder.d3roman.host/dashboard" target="_blank">
+                  <n-button icon-placement="left">
+                    Demo
+                  </n-button>
+                </a>
               </div>
             </div>
           </div>
