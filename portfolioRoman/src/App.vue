@@ -74,8 +74,8 @@ export default {
 },
   setup() {
     const valueLang = ref('es')
-    const showModal = ref(false)
-    // const showModal = ref(true)
+    // const showModal = ref(false)
+    const showModal = ref(true)
     const langOpts = ref([
       { value: 'es', label: 'Español' },
       { value: 'en', label: 'English' }
