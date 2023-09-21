@@ -4,7 +4,7 @@
       <div
         class="flex flex-row items-center content-center w-full justify-center gap-10 object-contain spanAmarillo"
       >
-        <n-image class="xl:block xs:hidden" width="300" src="https://demo.d3roman.host/resources/falloutBoy.png" />
+        <n-image class="xl:block xs:hidden" width="300" src="https://demo.d3roman.com/resources/falloutBoy.png" />
         <div class="flex flex-col mx-6">
           <h1 class="text-4xl font-bold">{{ $t('landing.holaSoy') }} <span>Roman Myziuk</span></h1>
           <small class="text-xl">Fullstack developer</small>

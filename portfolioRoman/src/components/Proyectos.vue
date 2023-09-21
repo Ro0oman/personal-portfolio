@@ -89,7 +89,7 @@
       <n-grid-item>
         <div class="card">
           <div>
-            <n-image class="coverImg" src="https://demo.d3roman.host/resources/tfg.png" />
+            <n-image class="coverImg" src="https://demo.d3roman.com/resources/tfg.png" />
             <div class="tags flex m-2 gap-2 flex-wrap">
               <div class="etiqueta">
                 <n-tag checkable :bordered="false" v-model:checked="naiveUITag">
@@ -178,7 +178,7 @@
                     Code
                   </n-button>
                 </a>
-                <a href="https://pcbuilder.d3roman.host/dashboard" target="_blank">
+                <a href="https://pcbuilder.d3roman.com/dashboard" target="_blank">
                   <n-button icon-placement="left">
                     Demo
                   </n-button>
@@ -191,7 +191,7 @@
       <n-grid-item>
         <div class="card">
           <div>
-            <n-image class="coverImg" src="https://demo.d3roman.host/resources/pong.png" />
+            <n-image class="coverImg" src="https://demo.d3roman.com/resources/pong.png" />
             <div class="tags flex m-2 gap-2 flex-wrap">
               <div class="etiqueta">
                 <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="jsTag">
@@ -228,7 +228,7 @@
                     Code
                   </n-button>
                 </a>
-                <a href="https://demo.d3roman.host/" target="_blank">
+                <a href="https://demo.d3roman.com/" target="_blank">
                   <n-button icon-placement="left"> Demo </n-button>
                 </a>
               </div>
@@ -239,7 +239,7 @@
       <n-grid-item>
         <div class="card">
           <div>
-            <n-image class="coverImg" src="https://demo.d3roman.host/resources/portfolio.png" />
+            <n-image class="coverImg" src="https://demo.d3roman.com/resources/portfolio.png" />
             <div class=" tags flex m-2 gap-2 flex-wrap">
               <div class="etiqueta">
                 <n-tag class="etiqueta" checkable :bordered="false" v-model:checked="naiveUITag">
